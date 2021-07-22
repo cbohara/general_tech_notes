@@ -1,0 +1,22 @@
+Amazon EMR Studio
+https://handouts-live.s3.amazonaws.com/ffc26451a66242858eb13e42b3a19e8c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210722T160035Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJICNIQWVMWBRIUMQ%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a87437b07d19de6c74852cb2dbe916ab8905805f03c44c7374e249de49812a24
+
+use standard SSO to directly access EMR studio without having to log into the AWS console
+
+AWS Service Catalog
+- simplifies launching clusters using pre configured templates 
+- avoid having to do all the bells + whistles when setting up a cluster in the AWS EMR cluster
+
+trigger pipelines from code repos
+Parameterize + chain notebooks that then can be run as pipelines
+easily plug in with Amazon Managed Workflows for Apache Airflow 
+
+https://emr-developer-experience.workshop.aws/
+https://github.com/aws-samples/emr-studio-samples
+
+code for demo
+https://github.com/dacort/jupyter-static-website
+blog for demo
+https://dev.to/dacort/continuous-deployment-of-jupyter-notebooks-4adh
+general blog
+https://dacort.dev/
