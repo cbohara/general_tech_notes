@@ -1,4 +1,5 @@
 Learning Data Governance
+https://www.linkedin.com/learning/learning-data-governance/the-value-of-data-governance
 central goal = data quality
 
 data managment = using data to make good business decision
@@ -78,3 +79,25 @@ process
 - resolving issues - deal with complex issues - how will they be surfaced and resolved?
 - communications - doesn't happen by accident, need to communicated to relevant stakeholders
 - reporting value - must report the value of the program, frequently ask if the program is providing value
+
+monitoring + measuring success of data governance program
+basic metrics
+1. data value - importance + usefulness of data
+measure timeliness - do decision makers have access to accurate data when they need it?
+measure completeness - does the data capture a comprehensive collection of attributes?
+2. measure the number of decisions made along the data governance lifecycle
+many decisions - data is highly value and/or sensitive
+pros - dealing with data with care + diligence
+cons - too many beauracracy?
+3. time it takes to make decisions
+4. monitoring and tracking metrics for data issues
+data errors - wrong data
+
+compliance + security
+how many non-compliance issues have shown up in a report?
+have folks struggled to access data?
+monitor data transfers to third party transfers to avoid data leaks 
+
+resources 
+https://www.isaca.org/
+https://datagovernance.com/
