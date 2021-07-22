@@ -1,0 +1,83 @@
+Understanding and Prioritizing Data Privacy
+https://www.linkedin.com/learning/understanding-and-prioritizing-data-privacy
+
+what do I decide to share? with whom? and when?
+all decisions are based on data stories
+
+data is a version of IP = intellectual property
+
+data privacy + protection = authorized processing of PII data according to fair principles
+PII = info that can describe a discrete individual
+
+secrecy != privacy
+confidentiality != privacy
+
+privacy = authorized processing of PII
+ex: violating privacy = sharing credit card info to make a payment, and data is used elsewhere which was not authorized
+
+well governed data system
+1. is the processing moral? 
+ex: chip prisoners + collect permentant record of their activity = HUGE moral issue 
+2. is the processing ethical? treats people in a consistent way that you know is "right"
+ex: would you brand be hurt if they found out how they are treating your data?
+3. is the processing legal? what are the rules + regulations that apply to that data?
+ex: protect EU citizens whereever they go
+4. is the processing fair? have a lot in common in ethics
+FIPPs = fair info protection principles - prevade how we look at privacy 
+how much data is collected? how much does it describe the data subject? how is the data flowing from ingest to expiration?
+
+data is a mirror of humanity
+data describes stories about individual lives
+
+organizations care about data because it brings value to the organization
+many orgs think they don't care about data privacy
+many think collecting more is better
+however data needs to be considered as assets and liabilities 
+
+privacy is contextual
+ex: the info you share with your dr is different than the data you share with your coworkers
+
+orgs can build trust by governing and architecting systems with users' best interest in mind
+have individual's that are accountable for info throughout itself lifecycle
+audit systems = make sure systems are processing systems in a fair, moral, ethical, and legal manner at all times 
+trust is built over time with their employees + their consumers
+
+trust is created when we know
+- what the data is
+- what it is supposed to be doing when 
+- how are we supporting the context with people process + tech
+
+data trust cliff
+as you are starting to build trust and individual gives you more and more more and more and then...
+share info to third parties that person didn't know about
+data security breach
+user finds out more data is collected than necessary
+
+talk to consumers as open + honest as possible
+have an avenue where consumers can provide feedback
+give the user the right to correct their data
+
+vulnerability in sharing info is always present
+when an individual + org come together in data exchange, there is vulnerability
+build trust over time
+
+data is not well designed or curated = vulnerability
+
+what do you do in terms of breach?
+prepare for all sorts of scenarios before they happen by making a plan
+1.  who needs to be informed?
+2. how should they be notified?
+3. what info is critical to recovery?
+
+2 sorts of companies - those who have breached, or don't realize they haven't been breached 
+
+when preparing ask yourself
+is the incident over? have I stopped the bleeding?
+who else is vulnerable?
+who does this impact?
+
+prevention + good governance helps mitigate the inevitable pain when a breach occurs by knowing what exactly was captured + how to stop the bleeding
+
+there is a ton of risk + a ton of value in data
+think of data as a currency - what can I get with this one dollar? what can I get with this piece of data?
+
