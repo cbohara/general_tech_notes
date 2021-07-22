@@ -1,0 +1,120 @@
+Using Lake House approach to enable self-service analytics with AWS Lake Formation
+https://handouts-live.s3.amazonaws.com/e23cf39fac4446e9ac00a27e0c704aa8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210722T160035Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJICNIQWVMWBRIUMQ%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2f8a23608970d1d8cc7f7a00533b865f999807e92c6ef12cf352078b4827adf4
+
+operationalizing data lakes on S3 is hard
+- difficult to insert, update, and delete data
+- security + governance is complex
+
+AWS Lake Formation - build a secure data lake
+-build data lakes quickly
+-- move, store, update, and catalog data faster
+-- automatically organize and optimize your data
+-simply security management 
+-- define + enforce
+-easily discover + share data
+-- catalog all data assets + easily share datasets between consumers
+
+introducing governed tables - new type of S3 table
+-simplifies approach for updating + deleting data
+-- provide set of APIs for ACID transactions
+-- consistent across tasks to insert, update, and delete 
+-optimization acceleration
+-- storage optimization
+-- auto compact small files into optimal size
+-time travel
+-- data versions
+-- provide data history
+-- reproduce experiments 
+-- audit changes of  data
+
+table based transactional API
+- add or remove files from manifest via API
+row based transactional API 
+- insert, update, and delete rows
+- great for updating data in place in S3 without ETL
+- deliver on delete functionality for GDPR in a scalable way
+- delta files contain edits 
+
+governed tables allows users the ability to update + delete data without ETL
+
+time travel
+- can see how data has evolved over time 
+
+new way to securely access data 
+- read the data in a consistent way
+- enforce permissions in a single consistent way
+
+AWS Lake Foramtion unified data access APIs
+- not a query engine
+- first checks if the request is authorized
+- then makes a request to the appropriate query
+
+example flow:
+user makes a query to Athena > read APIs make request to LF unified data access > check authorization from lake formation > get temp creds > request objects for the query > return data in apache arrow format so it is columnar and performant
+
+challenges in managing security + governance
+-visibility + ownership
+-- data sprawl
+-- minimal visibility
+-- difficult to secure
+-enforce permsisions
+-- gaps in capabilities
+-- inconsistent enforcement
+-data duplication
+-- requires ETL
+-- multiple copies is costly, inconsistent, difficult to maintain
+
+central governance
+-central catalog
+-- view + manage assets 
+-- data classification 
+-- access policies
+-- audit
+-fine grain permissions
+-- centrally enforced
+-- table, column, row based  
+-data sharing
+-- seamless sharing
+-- ubiquiotous
+-- tool agnostic
+
+Lake Formation
+- tag based access control
+-- simple to manage + scale permissions
+-- decouple permissions from resources
+
+Data mesh with central governance
+imagine there are 3 sep accounts
+1. data lake producer account
+2. central goverannce account
+- has visibility of all the producers and consumers 
+- enforce all permissions in a single place
+- avoid having to deal with all sorts of cross-account permission issues
+3. consumer account
+
+getting started
+generally available 
+for the preview features, sign up for the preview 
+
+q&a
+1. are y'all using open source tooling under the hood?
+not using an open source underneath the hood
+after exploring open source options they struggled with concurrency and scaling
+built tooling in house
+in house solution allows multiple reading from the same table + writing to the same table concurrently = not possible with open source solutions
+delta + ice berge are specific for the Hadoop + Spark ecosystem
+
+2. is ACID transaction possible after compaction?
+compaction is an async process that happens behind the scenes
+API monitors the goverened tables
+once there are enough files then it will merge in batches
+
+3. what is the max time travel lookback?
+it is configurable by the user
+can set to be a full year or just the past week
+
+4. when is the functionality going to be generally available?
+soon!
+
+5. can I execute federated queries from redshift + athena using lake formation?
+yes
