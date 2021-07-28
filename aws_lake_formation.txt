@@ -1,5 +1,6 @@
 Using Lake House approach to enable self-service analytics with AWS Lake Formation
 https://handouts-live.s3.amazonaws.com/e23cf39fac4446e9ac00a27e0c704aa8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210722T160035Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJICNIQWVMWBRIUMQ%2F20210722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2f8a23608970d1d8cc7f7a00533b865f999807e92c6ef12cf352078b4827adf4
+https://amer.resources.awscloud.com/aws-analytics-modernization-week-july-2021/deploy-lake-house-architecture-to-enable-self-service-analytics-with-aws-lake-formation
 
 operationalizing data lakes on S3 is hard
 - difficult to insert, update, and delete data
