@@ -81,3 +81,36 @@ prevention + good governance helps mitigate the inevitable pain when a breach oc
 there is a ton of risk + a ton of value in data
 think of data as a currency - what can I get with this one dollar? what can I get with this piece of data?
 
+take step level approach to addressing data privacy
+
+scoping workshop - understand what is desired outcome driven by data assets in order to tie development work to business outcomes
+what needs to be taken in?
+who in the system will be impacted?
+will third parties be involved?
+who needs to interact with the data?
+what systems/infrastructure already in place?
+
+by planning + deeply asking questions about each data element
+- why do you have it?
+- who needs it over time?
+- how do you edit it?
+- how do you ensure transparency and accountability?
+the system will be much more valuable over time
+
+why do you gather data and not have a plan?
+
+privacy engineering - built in privacy from the start, privacy by design
+
+moral crumble zone = systems should be designed to resist the most common or damaging points of failure
+
+build a privacy first culture - people need to value data privacy protection
+top 10 things I can do to better improve my data privacy stance
+
+privacy engineering
+- where the data is today
+- what is its context
+- who owns it
+- who has access to it
+
+have we gone in the direction we want to go?
+be proactive with capturing data to serve us
